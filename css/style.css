@@ -1,0 +1,635 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    width: 98.4%;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    padding-left: 13px;
+    padding-right: 13px;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: -8px;
+    z-index: 1111;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+div.menu-button {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    transition: 0.5s;
+}
+
+div.menu-button:hover {
+    cursor: pointer;
+}
+
+div.content {
+    display: flex;
+    margin-left: -2%;
+    margin-right: -2%;
+    margin-top: 75px;
+    flex-direction: column;
+    text-align: center;
+}
+
+div.colabora {
+    display: flex;
+    justify-content: center;
+}
+
+div.colabora div.foto-hogar {
+    width: 100%;
+    max-height: 700px;
+}
+
+div.colabora div.foto-hogar img {
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+}
+
+div.colabora .btn-colaborar {
+    position: absolute;
+    top: 25rem;
+    width: 200px;
+    height: 60px;
+    border-radius: 9px;
+    outline: 0;
+    border: none;
+    background-color: #E98F25;
+    color: #E9E9E9;
+    font-size: 22px;
+}
+
+div.banner-chicas {
+    display: flex;
+    justify-content: center;
+}
+
+div.banner-chicas img.foto-chicas {
+    width: 100%;
+}
+
+div.quienes-somos {
+    width: 100%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.quienes-somos p {
+    font-size: 25px;
+    width: 70%;
+}
+
+div.quienes-somos h {
+    font-size: 35px;
+
+}
+
+div.novedades {
+    background-color: #FFDFBA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    div.novedades-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+div.novedad-1,
+div.novedad-2,
+div.novedad-3,
+div.novedad-4 {
+    margin-bottom: 10%;
+    width: 30%;
+}
+
+div.novedad-1 img,
+div.novedad-2 img,
+div.novedad-3 img,
+div.novedad-4 img {
+    width: 100%;
+}
+
+div.novedad-1 {
+    margin-top: 5%;
+}
+
+@media (max-width: 1000px) {
+
+    div.novedad-1,
+    div.novedad-2,
+    div.novedad-3,
+    div.novedad-4 {
+        margin-bottom: 10%;
+        width: 70%;
+    }
+}
+
+@media (min-width: 1000px) {
+    div.novedades-page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.novedad-1 {
+        margin-top: 0%;
+    }
+
+    div.novedad-1,
+    div.novedad-2,
+    div.novedad-3,
+    div.novedad-4 {
+        margin-bottom: 5%;
+        width: 30%;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    div.quienes-somos {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+
+}
+
+
+.active-menu {
+    background: #E98F25;
+    transition: 0.5s;
+}
+
+.hidden {
+    display: none !important;
+    transition: 0.5s;
+}
+
+div.menu ul {
+    list-style-type: none;
+}
+
+div.menu li {
+    width: 120%;
+    border-radius: 9px;
+    text-align: center;
+}
+
+div.menu li:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+div.menu {
+    width: 260px;
+    height: auto;
+    position: fixed;
+    left: 14%;
+    top: 10%;
+    background: white;
+    border-radius: 9px;
+    z-index: 9999999999999999;
+    transition: 0.5s;
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+    line-height: 55px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+div.testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+div.testimonio-1 {
+    margin-top: 5%;
+}
+
+
+div.testimonio-1,
+div.testimonio-2,
+div.testimonio-3,
+div.testimonio-4 {
+    text-align: center;
+    margin-bottom: 10%;
+    width: 30%;
+}
+
+@media (max-width: 1000px) {
+
+    div.testimonio-1,
+    div.testimonio-2,
+    div.testimonio-3,
+    div.testimonio-4 {
+        margin-bottom: 10%;
+        width: 90%;
+    }
+
+}
+
+div.testimonio-1 img,
+div.testimonio-2 img,
+div.testimonio-3 img,
+div.testimonio-4 img {
+    width: 100%;
+}
+
+div.box-btn-testimonios {
+    width: 96px;
+    height: 28px;
+
+    border-right: 18;
+    border-left: 221;
+}
+
+
+div.testimonios button.btn-testimonios {
+
+    width: 30%;
+
+    color: #E9E9E9;
+    border-radius: 9px;
+    padding: 0%;
+    outline: 0;
+    border: none;
+    background-color: #E98F25;
+    color: #E9E9E9;
+    font-size: 20px;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    align-self: end;
+}
+
+@media (min-width: 800px) {
+    div.box-testimonios {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    div.testimonio-1 {
+        margin: 0%;
+    }
+
+    div.testimonio-2 {
+        margin: 0%;
+    }
+
+    div.testimonios button.btn-testimonios {
+        width: 15%;
+        color: #E9E9E9;
+        border-radius: 9px;
+        padding: 2%;
+        outline: 0;
+        border: none;
+        background-color: #E98F25;
+        color: #E9E9E9;
+        font-size: 20px;
+        margin-bottom: 5%;
+        margin-right: 0%;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.banner-chicas {
+        display: none;
+    }
+
+}
+
+@media (min-width: 500px) {
+    div.novedad-ampliada img {
+        width: 60%;
+    }
+}
+
+
+div.vostambien {
+    background: #FFDFBA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+div.vostambien div.titulo {
+    margin-top: 5%;
+    text-align: center;
+    width: 50%;
+}
+
+div.vostambien div.subtitulo {
+    text-align: center;
+    width: 60%;
+}
+
+div.vostambien button.btn-asociarme,
+div.vostambien button.btn-unicavez {
+    margin: 5%;
+    width: 200px;
+    height: 60px;
+    border-radius: 9px;
+    outline: 0;
+    border: none;
+    background-color: #E98F25;
+    color: #E9E9E9;
+    font-size: 22px;
+}
+
+div.vostambien button.btn-unicavez {
+    margin-bottom: 10%;
+}
+
+
+
+footer {
+    border-top: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+div.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.div-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+div.redes {
+    width: 40%;
+}
+
+div.redes img {
+    width: 60%;
+    margin: 3%;
+}
+
+footer .logo {
+    width: 30%;
+    margin-top: 5%;
+}
+
+footer .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.novedades span {
+    margin-bottom: 3%;
+}
+
+@media (min-width:800px) {
+
+    footer {
+        border-top: 2px solid grey;
+        text-decoration: #E98F25;
+        display: flex;
+        flex-direction: COLUMN;
+        align-items: center;
+    }
+
+    footer .info {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    div.redes img {
+        width: 50px;
+        border: 10px;
+    }
+
+    div.redes{
+        width: 80%;
+    }
+
+    footer .logo {
+        width: 200px;
+    }
+
+}
+
+
+footer p {
+    color: #E98F25;
+    margin: 0%;
+}
+
+footer h1 {
+    font-weight: bolder;
+    color: #E98F25;
+    margin-bottom: 10%;
+}
+
+footer .contactate,
+.seguinos {
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+footer .contactate {
+    font-size: 30px;
+}
+
+
+
+button.btn-ver-mas {
+    width: 30%;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    border-radius: 9px;
+    background: #E98F25;
+    color: #E9E9E9;
+}
+
+@media (min-width:800px) {
+    button.btn-ver-mas {
+        width: 10%;
+        border: none;
+        font-size: 20px;
+        border-radius: 9px;
+        background: #E98F25;
+        color: #E9E9E9;
+    }
+
+}
+
+
+div.menu li.ingreso-socios {
+    color: #E98F25;
+    margin-top: 65px;
+}
+
+div.menu button.btn-colaborar {
+    width: 100%;
+    height: 45px;
+    border-radius: 9px;
+    border: none;
+    font-size: 18px;
+    background-color: #E98F25;
+    color: #E9E9E9;
+}
+
+div.menu li.colaborar:hover {
+    background-color: transparent !important;
+}
+
+div.menu li.colaborar button:hover {
+    cursor: pointer;
+}
+
+div.nuestra-historia {
+
+    width: auto;
+    padding: 5%;
+    font-size: 3vh;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.nuestra-historia h1,
+div.nuestra-historia h3 {
+    text-align: center;
+}
+
+.btn-colaborar {
+    width: 200px;
+    height: 60px;
+    border-radius: 9px;
+    outline: 0;
+    border: none;
+    background-color: #E98F25;
+    color: #E9E9E9;
+    font-size: 22px;
+}
+
+div.content-menu-socio {
+    margin-left: -2%;
+    margin-right: -2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+div.options-socio {
+    margin-top: 150px;
+}
+
+div.content-menu-socio div.modificar-sub,
+div.dar-baja,
+div.sumar-testimonio {
+    margin-bottom: 20%;
+}
+
+div.input-testimonio textarea {
+    border: none;
+    width: 100%;
+    border-radius: 9px;
+}
+
+p.max-caracter {
+    color: #9E9E9E;
+}
+
+.enviar-testimonio {
+    margin-bottom: 10%;
+}
+
+div.novedad-ampliada {
+    width: auto;
+    padding: 5%;
+    font-size: 2vh;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.novedad-ampliada p {
+    width: 60%;
+}
+
+div.novedad-ampliada img {
+    margin-bottom: 5%;
+}
+
+.btn-testimonios {
+    width: 110px;
+    height: 35px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    background-color: #E98F25;
+    color: #E9E9E9;
+}
+
